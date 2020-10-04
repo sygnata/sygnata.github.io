@@ -6,23 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
+    <script src="https://kit.fontawesome.com/6c7183938f.js" crossorigin="anonymous"></script>
     <title>Portfólio</title>
   </head>
 
   <body>
-    <!-- PARTICLES -->
-    <div id="particles-container"></div>
-    <div class="texto">
-      <h1 class="headline">
-        CUNHADO
-      </h1>
-      <p class="tagline">
-        Estuda JavaScript,
-        <span class="punchline">Caraio....</span>
-      </p>
-    </div>
+
+    <nav class="navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+      </span>
+      <a href="#" class="logo">logo</a>
+      <ul class="main-nav" id="js-menu">
+        <li>
+          <a href="#" class="nav-links">Sobre</a>
+        </li>
+        <li>
+          <a href="#" class="nav-links">Tecnologias</a>
+        </li>
+        <li>
+          <a href="#" class="nav-links">Projetos</a>
+        </li>
+        <li>
+          <a href="#" class="nav-links">Contatos</a>
+        </li>
+        <li>
+          <a href="#" class="nav-links">Outros</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="main">
+      <div class="sobre">
+        <div class="texto">
+          <h1 class="headline">
+            André Ferraz
+          </h1>
+          <p class="tagline">
+            Desenvolvedor Web,
+            <span class="punchline">Gosta de Front</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="tecnologias">
+        <i></i><span>Javascript</span>
+        <i></i><span>HTML</span>
+        <i></i><span>CSS</span>
+        <i></i><span>React</span>
+      </div>
+    </main>
+    <aside class="projetos">GIT HUB API</aside>
+    <footer class="footer">
+      <a href="https://www.linkedin.com/in/andre-ferraz-304458127/"><i></i>Linkein</a>
+      <a href="https://github.com/sygnata"><i></i>Github</a>
+      <a href="https://twitter.com/andreferrazf"><i></i>Twitter</a>
+    </footer>
+
+
+
     <script src="./js/script.js"></script>
   </body>
 
