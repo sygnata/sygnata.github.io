@@ -85,10 +85,38 @@ body {
   text-transform: uppercase;
   font-size: 1em;
 }
+#sobre .texto {
+  position: relative;
+}
 #sobre .texto > h1 {
   font-size: 2.6em;
   font-weight: 700;
   letter-spacing: 0.1em;
+}
+#sobre .texto > .nome {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+#sobre .texto > .nome .active {
+  animation: smoke 2s linear forwards;
+  transform-origin: bottom;
+}
+@keyframes smoke {
+  0% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+  }
+  50% {
+    opacity: 1;
+    pointer-events: none;
+  }
+  100% {
+    opacity: 1;
+    filter: blur(20px);
+    transform: translateX(300px) translateY(-300px) rotate(720deg) scale(4);
+  }
 }
 #sobre .texto > h1,
 #sobre .texto > p {

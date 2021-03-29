@@ -41,7 +41,7 @@
 				<div class="sobre d-flex justify-content-center align-items-center flex-column" id="sobre">
 					<span class="pb-2">OLÁ! Eu sou </span>
 					<div class="texto mb-2">
-						<h1 class="headline text-center">
+						<h1 class="headline text-center nome">
 							André Ferraz
 						</h1>
 						<p class="tagline  text-center">Desenvolvedor Web,</p>
@@ -65,6 +65,18 @@
 		<script src="https://unpkg.com/scrollreveal"></script>
 		<script src="https://kit.fontawesome.com/6c7183938f.js" crossorigin="anonymous"></script>
 		<script src="js/script.js"></script>
+
+		<script>
+			const text = document.querySelector('.nome');
+			text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>")
+
+			const letters = document.querySelectorAll('span');
+			for (let i = 0; i < letters.length; i++) {
+				letters[i].addEventListener('mouseover', function () {
+					letters[i].classList.add('active');
+				})
+			}
+		</script>
 	</body>
 
 </html>
