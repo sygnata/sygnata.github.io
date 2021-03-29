@@ -126,7 +126,7 @@ body {
 /*ARROW*/
 #arrowAnim {
   width: 20vw;
-  height: 50vh;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,11 +143,23 @@ body {
 
 .arrowSliding {
   position: absolute;
-  top: 345px;
+  top: 375px;
   -webkit-animation: slide 4s linear infinite;
   animation: slide 4s linear infinite;
 }
-
+@media (max-width: 991px) {
+  .arrowSliding {
+    top: 370px;
+  }
+  #sobre {
+    margin-top: 1em;
+  }
+}
+@media (max-width: 197px) {
+  .arrowSliding {
+    top: 390px;
+  }
+}
 .delay1 {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
