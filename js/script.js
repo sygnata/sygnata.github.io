@@ -29,6 +29,6 @@ $('.nav a[href^="#"]').on('click', function (e) {
 		targetOffset = $(id).offset().top;
 
 	$('html, body').animate({
-		scrollTop: targetOffset - 100
+		scrollTop: targetOffset - 126
 	}, 500);
 });
