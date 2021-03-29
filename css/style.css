@@ -78,27 +78,30 @@ body {
 #navbarNavAltMarkup {
   transition: 0.5s linear;
 }
-/*SOBRE*/
-#sobre > span {
+/*apresentacao*/
+#apresentacao {
+  margin-top: 126px;
+}
+#apresentacao > span {
   color: var(--primary-color);
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1em;
 }
-#sobre .texto {
+#apresentacao .texto {
   position: relative;
 }
-#sobre .texto > h1 {
+#apresentacao .texto > h1 {
   font-size: 2.6em;
   font-weight: 700;
   letter-spacing: 0.1em;
 }
-#sobre .texto > .nome {
+#apresentacao .texto > .nome {
   position: relative;
   display: inline-block;
   cursor: pointer;
 }
-#sobre .texto > .nome .active {
+#apresentacao .texto > .nome .active {
   animation: smoke 2s linear forwards;
   transform-origin: bottom;
 }
@@ -118,8 +121,8 @@ body {
     transform: translateX(300px) translateY(-300px) rotate(720deg) scale(4);
   }
 }
-#sobre .texto > h1,
-#sobre .texto > p {
+#apresentacao .texto > h1,
+#apresentacao .texto > p {
   color: #f7f7f7;
   letter-spacing: 0.05em;
 }
@@ -151,7 +154,7 @@ body {
   .arrowSliding {
     top: 370px;
   }
-  #sobre {
+  #apresentacao {
     margin-top: 1em;
   }
 }
@@ -208,4 +211,22 @@ body {
     opacity: 0;
     transform: translateY(21px);
   }
+}
+/*SOBRE*/
+#sobre {
+  margin-top: 126px;
+}
+#sobre div div h1,
+#sobre div div p {
+  color: #f7f7f7;
+}
+ul li span {
+  color: #f7f7f7;
+}
+ul li span:first-child {
+  color: var(--primary-color);
+}
+ul li span a {
+  text-decoration: none;
+  color: #f7f7f7;
 }
