@@ -11,24 +11,38 @@ ScrollReveal().reveal('.tagline', {
 ScrollReveal().reveal('.punchline', {
 	delay: 2000
 })
+
+
 /*SMOKE EFFECT*/
-const text = document.querySelector('.nome');
-text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>")
+function initSmokeEffect() {
+	const text = document.querySelector('.nome');
+	text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>")
 
-const letters = document.querySelectorAll('span');
-for (let i = 0; i < letters.length; i++) {
-	letters[i].addEventListener('mouseover', function () {
-		letters[i].classList.add('active');
-	})
+	const letters = document.querySelectorAll('span');
+	for (let i = 0; i < letters.length; i++) {
+		letters[i].addEventListener('mouseover', function () {
+			letters[i].classList.add('active');
+		})
+	}
 }
+initSmokeEffect();
 
-/*Scoll Suave*/
-$('.nav a[href^="#"]').on('click', function (e) {
-	e.preventDefault();
-	var id = $(this).attr('href'),
-		targetOffset = $(id).offset().top;
+function initScrollSuave() {
+	const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
 
-	$('html, body').animate({
-		scrollTop: targetOffset - 126
-	}, 500);
-});
+	function scrollToSection(event) {
+		event.preventDefault();
+		const href = event.currentTarget.getAttribute('href');
+		const section = document.querySelector(href);
+
+		section.scrollIntoView({
+			behavior: "smooth",
+			block: "start"
+		})
+	}
+
+	linksInternos.forEach((link) => {
+		link.addEventListener('click', scrollToSection);
+	});
+}
+initScrollSuave();

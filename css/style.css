@@ -79,9 +79,6 @@ body {
   transition: 0.5s linear;
 }
 /*apresentacao*/
-#apresentacao {
-  margin-top: 126px;
-}
 #apresentacao > span {
   color: var(--primary-color);
   font-weight: 700;
@@ -213,9 +210,7 @@ body {
   }
 }
 /*SOBRE*/
-#sobre {
-  margin-top: 126px;
-}
+
 #sobre div div h1,
 #sobre div div p {
   color: #f7f7f7;
