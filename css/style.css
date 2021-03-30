@@ -435,6 +435,21 @@ ul li span a {
   text-decoration: none !important;
   color: #f7f7f7;
 }
+/*FOOTER*/
+footer {
+  background: var(--navbar-background);
+}
+#footer .links > div a,
+#footer .duvida > div a {
+  text-decoration: none;
+  color: #cecece;
+}
+#footer .links > div a:hover,
+#footer .duvida > div a:hover {
+  color: rgba(8, 206, 10, 0.51);
+  transition: 0.3s;
+}
+
 /*KONAMI CODE*/
 #winScreen {
   opacity: 0;
