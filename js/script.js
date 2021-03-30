@@ -63,7 +63,7 @@ function initKonamiCode1() {
 		const fraseComCaracteres = sequenciaDeCaracteres.join('');
 
 		if (fraseComCaracteres.includes(codigoSecreto)) {
-			console.log('Você ACERTOU a sequencia!!!')
+			// console.log('Você ACERTOU a sequencia!!!')
 			// document.querySelector('#winScreen').dataset.status = 'active'
 			document.querySelector('#winScreen').innerHTML = "SARAH TE AMO!!!"
 			window.scrollTo(0, 0);
@@ -78,3 +78,26 @@ function initKonamiCode1() {
 	});
 }
 initKonamiCode1();
+
+function initAnimacaoScroll() {
+	const sections = document.querySelectorAll('.js-scroll');
+	if (sections.length) {
+		const windowMetade = window.innerHeight * 0.6;
+
+		function animaScroll() {
+			sections.forEach((section) => {
+				const sectionTop = section.getBoundingClientRect().top;
+				const isSectionVisible = (sectionTop - windowMetade) < 0;
+				if (isSectionVisible)
+					section.classList.add('ativo');
+				else
+					section.classList.remove('ativo');
+			})
+		}
+
+		animaScroll();
+
+		window.addEventListener('scroll', animaScroll);
+	}
+}
+initAnimacaoScroll();
