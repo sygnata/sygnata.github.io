@@ -389,7 +389,10 @@ ul li span a {
   z-index: 1;
   transition: 0.5s;
   color: #f7f7f7;
-  /* display: none; */
+}
+
+body.active {
+  background-color: pink;
 }
 .card-wrapper .box:hover .content {
   left: -25px;
@@ -415,4 +418,14 @@ ul li span a {
   text-decoration: none;
   padding: 10px;
   font-weight: 700px;
+}
+/*KONAMI CODE*/
+#winScreen {
+  opacity: 0;
+  display: none;
+  transition: opacty 0.5s ease-in-out;
+}
+#winScreen.active {
+  display: block !important;
+  opacity: 1;
 }
