@@ -232,7 +232,8 @@ ul li span a {
   justify-content: center;
   align-items: center; */
 }
-#projetos > h1 {
+#projetos > h1,
+#contato > h1 {
   font-size: 2.5em;
   letter-spacing: 0.1em;
   font-weight: bold;
@@ -391,9 +392,6 @@ ul li span a {
   color: #f7f7f7;
 }
 
-body.active {
-  background-color: pink;
-}
 .card-wrapper .box:hover .content {
   left: -25px;
   padding: 60px 40px;
@@ -419,6 +417,24 @@ body.active {
   padding: 10px;
   font-weight: 700px;
 }
+/*CONTATO*/
+.icone {
+  width: 100px;
+  height: 100px;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px rgba(8, 206, 10, 0.51);
+}
+.wrapper-contato {
+  border: 1px solid #252323;
+  padding: 40px 60px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2), 4px 4px 4px rgba(0, 0, 0, 0.1),
+    8px 8px 8px rgba(0, 0, 0, 0.1);
+}
+#contato a {
+  text-decoration: none !important;
+  color: #f7f7f7;
+}
 /*KONAMI CODE*/
 #winScreen {
   opacity: 0;
@@ -432,8 +448,8 @@ body.active {
 /*ANIMAÇÃO AO SCROLL*/
 .js-scroll {
   opacity: 0;
-  transform: translate3d(30px, 30px, 0);
-  transition: 0.3s;
+  transform: translate3d(0, 30px, 0);
+  transition: 0.4s;
 }
 
 .js-scroll.ativo {
