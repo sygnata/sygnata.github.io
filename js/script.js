@@ -35,10 +35,19 @@ function initScrollSuave() {
 		const href = event.currentTarget.getAttribute('href');
 		const section = document.querySelector(href);
 
-		section.scrollIntoView({
-			behavior: "smooth",
-			block: "start"
-		})
+
+		// forma alternativa
+		const topo = section.offsetTop;
+		window.scrollTo({
+			top: topo,
+			behavior: 'smooth',
+		});
+
+		//nao tem suporte em todos os browsers
+		// section.scrollIntoView({
+		// 	behavior: "smooth",
+		// 	block: "start"
+		// })
 	}
 
 	linksInternos.forEach((link) => {
