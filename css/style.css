@@ -484,7 +484,9 @@ footer {
 
 .js-scroll-icone.ativoIcone:hover {
   transform: rotate3d(2, 2, 2, 50deg);
+  scale: 1.4;
 }
+
 #wrapper-coelho {
   font-size: 0.7em;
 }
