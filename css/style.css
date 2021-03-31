@@ -14,6 +14,7 @@ body {
   background-color: var(--background-primary);
   font-family: var(--fonte);
 }
+
 /*HEADER*/
 .navbar {
   background-color: var(--navbar-background) !important;
@@ -571,6 +572,21 @@ footer {
 #winScreen.active {
   display: block !important;
   opacity: 1;
+}
+#matrix {
+  display: none;
+  opacity: 0;
+  max-width: 100vw;
+  height: 200px;
+  margin: 0 auto;
+}
+
+#matrix.active {
+  display: block !important;
+  opacity: 1;
+  background-image: url("https://media.giphy.com/media/sULKEgDMX8LcI/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*ANIMAÇÃO AO SCROLL*/
 .js-scroll {
