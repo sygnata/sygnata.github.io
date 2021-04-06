@@ -1,17 +1,7 @@
-// Scroll Reveal
-ScrollReveal({
-	duration: 1000
-})
+import scrollRevealTitle from './modules/scrollRevealTitle.js';
 
-ScrollReveal().reveal('.headline')
-ScrollReveal().reveal('.tagline', {
-	delay: 500
 
-})
-ScrollReveal().reveal('.punchline', {
-	delay: 2000
-})
-
+scrollRevealTitle();
 
 /*SMOKE EFFECT*/
 function initSmokeEffect() {
