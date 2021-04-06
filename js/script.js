@@ -5,6 +5,7 @@ import initiBackToTop from './modules/initiBackToTop.js';
 import initAnimacaoScroll from './modules/initAnimacaoScroll.js';
 import initAnimacaoScroll1 from './modules/initAnimacaoScroll1.js';
 import initKonamiCode1 from './modules/initKonamiCode1.js';
+import initKonamiCode2 from './modules/initKonamiCode2.js';
 
 scrollRevealTitle();
 initSmokeEffect();
