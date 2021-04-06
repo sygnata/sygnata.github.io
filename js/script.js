@@ -2,11 +2,14 @@ import scrollRevealTitle from './modules/scrollRevealTitle.js';
 import initSmokeEffect from './modules/initSmokeEffect.js';
 import initScrollSuave from './modules/initScrollSuave.js';
 import initiBackToTop from './modules/initiBackToTop.js';
+import initAnimacaoScroll from './modules/initAnimacaoScroll.js';
 
 scrollRevealTitle();
 initSmokeEffect();
 initScrollSuave();
 initiBackToTop();
+initAnimacaoScroll();
+
 
 /*Konami Code*/
 function initKonamiCode1() {
@@ -57,29 +60,7 @@ function initKonamiCode2() {
 initKonamiCode2();
 
 
-/*ANIMA SCROLL*/
-function initAnimacaoScroll() {
-	const sections = document.querySelectorAll('.js-scroll');
-	if (sections.length) {
-		const windowMetade = window.innerHeight * 0.6;
 
-		function animaScroll() {
-			sections.forEach((section) => {
-				const sectionTop = section.getBoundingClientRect().top;
-				const isSectionVisible = (sectionTop - windowMetade) < 0;
-				if (isSectionVisible)
-					section.classList.add('ativo');
-				else
-					section.classList.remove('ativo');
-			})
-		}
-
-		animaScroll();
-
-		window.addEventListener('scroll', animaScroll);
-	}
-}
-initAnimacaoScroll();
 
 function initAnimacaoScroll1() {
 	const sections = document.querySelectorAll('.js-scroll-icone');
