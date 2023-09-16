@@ -2,9 +2,9 @@
 
 :root {
   --fonte: "Roboto", sans-serif;
-  --background-primary: #252323;
-  --navbar-background: #151515;
-  --primary-color: #08ce0a;
+  --background-primary: #fff;
+  --navbar-background: #fff;
+  --primary-color: #ffcc54;
   --gradient-color: #c3d9c3;
 }
 body {
