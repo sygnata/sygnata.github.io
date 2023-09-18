@@ -2,9 +2,9 @@
 
 :root {
   --fonte: "Roboto", sans-serif;
-  --background-primary: #252323;
-  --navbar-background: #151515;
-  --primary-color: #08ce0a;
+  --background-primary: #fff;
+  --navbar-background: #fff;
+  --primary-color: #ffcc54;
   --gradient-color: #c3d9c3;
 }
 body {
@@ -85,7 +85,7 @@ body {
   color: #bb3f04;
   font-weight: 700;
   /* text-transform: uppercase; */
-  font-size: 4.9em;
+  font-size: 4.6em;
   text-align: center;
 }
 #apresentacao .texto {
@@ -694,7 +694,7 @@ footer > a:hover {
 /*BACK TO TOP BUTTON*/
 #BtnBackToTop {
   display: inline-block;
-  background-color: var(--primary-color);
+  background-color: #bb3f04;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -719,11 +719,11 @@ footer > a:hover {
 }
 #BtnBackToTop:hover {
   cursor: pointer;
-  background-color: var(--navbar-background);
+  background-color: #ffcc54;
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 #BtnBackToTop:active {
-  background-color: var(--navbar-background);
+  background-color: #ffcc54;
 }
 #BtnBackToTop.show {
   opacity: 1;
